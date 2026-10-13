@@ -1,0 +1,1 @@
+export const BACKEND_URL:string = 'https://a08-venue-explorer-backend.vercel.app';
