@@ -2,7 +2,7 @@ import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 import getUserProfile from "@/libs/getUserProfile";
 import BookingForm from "@/components/BookingForm";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "@/libs/auth";
 
 export default async function BookingPage() {
   const session = await getServerSession(authOptions);
