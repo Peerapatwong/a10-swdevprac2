@@ -4,7 +4,7 @@ import DateReserve from "@/components/DateReserve";
 import { MenuItem, Select, TextField } from "@mui/material";
 import { useSession } from "next-auth/react";
 
-export default function BookingForm({ profile }: { profile: Object }) {
+export default function BookingForm({ profile }: { profile: any }) {
 
     var createdAt = new Date(profile.createdAt);
 
